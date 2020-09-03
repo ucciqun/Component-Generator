@@ -1,0 +1,13 @@
+.store {
+  padding-left: 20px;
+  padding-right: 20px;
+  flex: 4;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+@media screen and (min-width: 600px) {
+  .store {
+    grid-template-columns: 1fr 1fr;
+  }
+}

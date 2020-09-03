@@ -1,0 +1,9 @@
+.topAppBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: solid 1px gray;
+}
+.topAppBar > h2 {
+  color: gray;
+}
