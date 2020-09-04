@@ -6,7 +6,9 @@ import { CartItem } from "./App";
 import AppBar from "./components/AppBar";
 import Drawer from "./components/Drawer";
 import BottomNav from "./components/BottomNav";
+import Breadcrumbs from "./components/Breadcrumbs";
 import Component from "./components/Component";
+import Loading from "./components/Loading";
 
 const Store = () => {
   const [item, setItem] = useContext(CartItem);
@@ -20,6 +22,12 @@ const Store = () => {
       </Component>
       <Component title="BottomNav">
         <BottomNav />
+      </Component>
+      <Component title="Breadcrumbs">
+        <Breadcrumbs />
+      </Component>
+      <Component title="Loading">
+        <Loading />
       </Component>
     </div>
   );

@@ -16,14 +16,14 @@ const Nav = () => {
         defaultCollapseIcon={<ExpandMoreIcon />}
         defaultExpandIcon={<ChevronRightIcon />}
       >
-        <TreeItem nodeId="1" label="Applications">
+        <TreeItem nodeId="1" label="Material UI">
           <TreeItem
             nodeId="2"
-            label="Calendar"
+            label="AppBar"
             onClick={() => setCode(`import calender`)}
           />
-          <TreeItem nodeId="3" label="Chrome" />
-          <TreeItem nodeId="4" label="Webstorm" />
+          <TreeItem nodeId="3" label="Drawer" />
+          <TreeItem nodeId="4" label="BottomNav" />
         </TreeItem>
         <TreeItem nodeId="5" label="Documents">
           <TreeItem nodeId="10" label="OSS" />

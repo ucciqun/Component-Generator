@@ -1,3 +1,7 @@
-.app__body {
+.app__root {
   display: flex;
+}
+.app__body {
+  max-width: 1500px;
+  margin: 0 auto;
 }

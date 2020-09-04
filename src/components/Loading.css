@@ -1,0 +1,13 @@
+.loading {
+  width: 100%;
+  height: 150px;
+}
+.loading__text {
+  width: 100%;
+}
+.loading__textEnd {
+  width: 60%;
+}
+.loadingContainer {
+  display: flex;
+}

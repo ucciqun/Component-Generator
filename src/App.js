@@ -18,21 +18,23 @@ function App() {
       <CartItem.Provider value={[item, setItem]}>
         <Router>
           <Header />
-          <Switch>
-            <Route exact path="/">
-              <Button>App</Button>
-              <Button>Header</Button>
-              <Button>Body</Button>
-              <Button>Footer </Button>
-              <div className="app__body">
-                <Nav className="app__nav" />
-                <Store className="app__store" />
-              </div>
-            </Route>
-            <Route exact path="/cart">
-              <Cart />
-            </Route>
-          </Switch>
+          <div className="app__body">
+            <Switch>
+              <Route exact path="/">
+                <Button>App</Button>
+                <Button>Header</Button>
+                <Button>Body</Button>
+                <Button>Footer </Button>
+                <div className="app__root">
+                  <Nav className="app__nav" />
+                  <Store className="app__store" />
+                </div>
+              </Route>
+              <Route exact path="/cart">
+                <Cart />
+              </Route>
+            </Switch>
+          </div>
         </Router>
       </CartItem.Provider>
     </div>
