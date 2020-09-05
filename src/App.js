@@ -7,15 +7,17 @@ import Header from "./Header";
 import Nav from "./Nav";
 import Store from "./Store";
 import Cart from "./Cart";
+import Footer from "./Footer";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { createContext } from "react";
 
 export const CartItem = createContext();
 function App() {
-  const [item, setItem] = useState([]);
+  const [items, setItems] = useState([]);
+  const [currentItem, setCurrentItem] = useState("App");
   return (
     <div className="app">
-      <CartItem.Provider value={[item, setItem]}>
+      <CartItem.Provider value={[items, setItems, currentItem, setCurrentItem]}>
         <Router>
           <Header />
           <div className="app__body">
@@ -35,6 +37,7 @@ function App() {
               </Route>
             </Switch>
           </div>
+          <Footer />
         </Router>
       </CartItem.Provider>
     </div>
