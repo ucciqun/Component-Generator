@@ -9,6 +9,7 @@ import BottomNav from "./components/BottomNav";
 import Breadcrumbs from "./components/Breadcrumbs";
 import Component from "./components/Component";
 import Loading from "./components/Loading";
+import { Grida } from "./components/Layout/Grid";
 
 const Store = () => {
   const [item, setItem] = useContext(CartItem);
@@ -28,6 +29,9 @@ const Store = () => {
       </Component>
       <Component title="Loading">
         <Loading />
+      </Component>
+      <Component title="Grid">
+        <Grida />
       </Component>
     </div>
   );
