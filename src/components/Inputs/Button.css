@@ -1,0 +1,8 @@
+.button__buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.button__paper {
+  padding: 8px;
+  margin-bottom: 8px;
+}

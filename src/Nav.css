@@ -4,7 +4,7 @@
   padding: 10px 0px 0px 20px;
   border-right: solid 1px lightgray;
 }
-@media screen and (max-width: 801px) {
+@media screen and (max-width: 1000px) {
   .nav {
     display: none;
   }

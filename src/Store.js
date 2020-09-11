@@ -10,6 +10,8 @@ import Breadcrumbs from "./components/Breadcrumbs";
 import Component from "./components/Component";
 import Loading from "./components/Loading";
 import { Grida } from "./components/Layout/Grid";
+import { GridLista } from "./components/Layout/GridList";
+import { Buttona } from "./components/Inputs/Button";
 
 const Store = () => {
   const [item, setItem] = useContext(CartItem);
@@ -32,6 +34,12 @@ const Store = () => {
       </Component>
       <Component title="Grid">
         <Grida />
+      </Component>
+      <Component title="GridList">
+        <GridLista />
+      </Component>
+      <Component title="Button">
+        <Buttona />
       </Component>
     </div>
   );

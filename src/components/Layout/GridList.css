@@ -1,0 +1,9 @@
+.gridList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+.gridList__container {
+  height: 300px;
+}
