@@ -7,6 +7,7 @@ export const Buttona = () => {
     <div>
       <Paper className="button__paper">
         <h3>Contained Buttons</h3>
+        <h1>test</h1>
         <div className="button__buttonsContainer">
           <Button variant="contained">Default</Button>
           <Button variant="contained" color="primary">
